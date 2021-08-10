@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Twelve网页导航</title>
+        <link rel="icon" type="image/x-ico" href="head.ico" />
+        <style>
+            /*声明：bd为body，lf为left侧边栏 rg为right主菜单*/
+            body{
+                background-image: url(bg.jpg);
+                background-repeat:no repeat;
+                background-size:100%;
+                width: 1000px;
+                height: 600px;
+                align:center;
+                margin: 0 auto;
+            }
+            .lf{
+                width:270px;
+                height:600px;/*和bd重合*/
+                background-color: rgba(255, 255, 255, 0.767);
+                float:left;
+                display:inline;
+                border-radius: 10px;
+                border-style: 1px;
+                overflow-y:auto;
+            }
+            .rg{
+                width:710px;
+                height:600px;
+                background-color: rgba(255, 255, 255, 0.767);
+                float:right;
+                display:inline;
+                border-radius: 10px;
+                border-style: 1px;
+                overflow-y:auto;/*可滑动*/
+            }
+            .hd{
+                width:1000px;
+                height: 100px;
+                background-color: rgba(255, 255, 255, 0.767);
+                margin: 0 auto;
+                align:center;
+                border-radius: 10px;
+            }
+            #sr{
+                width:500px;
+                height:30px;
+                border-radius: 5px;
+                float:left;
+                line-height: 50%;
+            }
+            #bt{
+                width:60px;
+                height:35px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 5px;
+                line-height: 50%;
+            }
+            .search{
+                width:600px;
+                height:40px;
+                margin: 0 auto;
+                align:center;
+                line-height: 50%;
+            }
+            p,h1,h2,h3,h4,h5,h6,a,hr{
+                color: rgb(165, 162, 162);
+            }
+            #jg{
+                height: 1px;
+            }
+            li{
+                color:rgb(165, 162, 162);
+                align:center;
+            }
+            a{
+                text-decoration:none;
+                color:cornflowerblue;
+            }
+            a:hover{
+                color: cornflowerblue;
+            }
+            a:visited{
+                color:rgb(165, 162, 162);
+            }
+            #input{
+                width:100px;
+                height:30px;
+                border-radius: 5px;
+                ailgn:center;
+                border: rgba(255, 255, 255, 0.767) 1px;
+                margin:0 auto;
+            }
+            .box1{
+                width:660px;
+                height: 220px;
+                background-color:#fff;
+                border-radius: 5px;
+                margin: 0 auto;
+            }
+            .box2{
+                width:640px;
+                height:210px;
+                margin:0 auto;
+            }
+            .box3{
+                width:200px;
+                height:110px;
+                border-radius: 2px;
+                float: left;
+                display: inline;
+            }
+            #jg1{
+                height:1px;
+            }
+            #image{
+                width:32px;
+                height:32px;
+                vertical-align:middle;
+            }
+            #pag{
+                color: rgb(165,162,162);
+            }
+            .box4{
+                width:180px;
+                height:110px;
+                margin: 0 auto;
+            }
+            .lf1{
+                width:230px;
+                height:80px;
+                margin:0 auto;
+                border-radius: 3px;
+                background-color: #fff;
+            }
+            .box5ce{
+                width:200px;
+                height:110px;
+                border-radius: 2px;
+                display: inline;
+                float: left;
+            }
+            .box6rg{
+                width:200px;
+                height:110px;
+                border-radius: 2px;
+                display: inline;
+                float: left;
+            }
+            audio{
+                width:210px;
+                margin: 0 auto;
+                height:35px;
+                border-radius: 3px;
+            }
+            .rg::-webkit-scrollbar{ 
+            border-radius: 5px;
+            }
+
+        </style>
+        <script src="./main.js"></script>
+        <script>
+            function sbsb() {
+                var a = document.getElementById("sr");
+                var loc = a.value;
+                window.open("https://quark.sm.cn/s?q="+loc);
+            }
+            function funTwo() {
+                alert("正在为您打开系统默认的邮件编辑器...")
+            }
+            function funThree() {
+                console.log("仙人，我吃你仙人");
+            }
+        </script>
+    </head>
+    <body>
+        <div class="hd">
+            <p>&nbsp;</p>
+            <div class="search">
+                <from name="search" id="search">
+                    <input type="text" id="sr" name="sea" placeholder="使用 夸克 搜索" value=""/>
+                    <button id="bt" onclick="sbsb()">搜索</button>
+                </from>
+            </div>
+        </div>
+        <p id="jg">&nbsp;</p>
+        <div class="bd">
+            <div class="lf">
+                <p id="jg1">&nbsp;</p>
+                <div class="lf1">
+                        <p align="center">黑人抬棺（中国风）</p>
+                        <audio src="bgm.mp3" autoplay="autoplay" controls="controls" align="center"></audio>
+                </div>
+                <p id="jg1">&nbsp;</p>
+                <div style="margin: 0 auto; width: 230px; height: 200px; border-radius: 3px;">
+                <img src="funny.jpg" alt="一张滑♂稽的图片" width="230px" height="200px" style="margin: 0 auto;">
+                </div>
+                <div align="center">
+                <h3>联系作者</h3>
+                <p>&nbsp;使用邮件发送</p>
+                <a href="mailto:3613412661@qq.com?subject=联系作者&body=在这里写上你要说的话..." onclick="funTwo()">联系作者</a>
+                <p>作者：十二骚年</p>
+                </div>
+            </div>
+            <div class="rg">
+                <p align="center">作者注：这是一个半成品网站</p>
+                <p id="jg1">&nbsp;</p>
+                <p align="center">注：排序不分先后</p>
+                <p>
+                <div class="box1" width="250px" height="100px">
+                    <div class="box2">
+                        <p id="jg1">&nbsp;</p>
+                        <h3>&nbsp;影视</h3>
+                        <hr>
+                        <div class="box3">
+                            <div class="box4">
+                            <h3>&nbsp;优酷网</h3>
+                            <p id="jg1">&nbsp;无介绍</p>
+                            <a href="https://www.youku.com/"><button id="bt" style="float: right;">>进入</button></a>
+                            </div>
+                        </div>
+                        <div class="box5ce">
+                            <div class="box4">
+                            <h3>&nbsp;爱奇艺</h3>
+                            <p id="jg1">&nbsp;无介绍</p>
+                            <a href="https://www.aiqiyi.com/"><button id="bt" style="float: right;">>进入</button></a>
+                            </div>
+                        </div>  
+                        <div class="box6rg">
+                            <div class="box4">
+                                <h3>&nbsp;哔哩哔哩</h3>
+                                <p id="jg1">&nbsp;无介绍</p>
+                                <a href="https://www.bilibili.com/"><button id="bt" style="float: right;">>进入</button></a>
+                            </div>
+                        </div>   
+                        <p>&nbsp;</p>
+                        <a href="yingshi.html"><p align="center" style="width: 600px;">>查看更多</p></a>
+                    </div>
+                </div>
+                </p>
+                <div class="box1" width="250px" height="100px">
+                    <div class="box2">
+                        <p id="jg1">&nbsp;</p>
+                        <h3>&nbsp;邮箱</h3>
+                        <hr>
+                        <div class="box3">
+                            <div class="box4">
+                            <h3>&nbsp;网易邮箱</h3>
+                            <p id="jg1">&nbsp;无介绍</p>
+                            <a href="https://mail.163.com/"><button id="bt" style="float: right;">>进入</button></a>
+                            </div>
+                        </div>
+                        <div class="box5ce">
+                            <div class="box4">
+                            <h3>&nbsp;QQ邮箱</h3>
+                            <p id="jg1">&nbsp;无介绍</p>
+                            <a href="https://mail.qq.com/"><button id="bt" style="float: right;">>进入</button></a>
+                            </div>
+                        </div>  
+                        <div class="box6rg">
+                            <div class="box4">
+                                <h3>&nbsp;126邮箱</h3>
+                                <p id="jg1">&nbsp;无介绍</p>
+                                <a href="https://mail.126.com/"><button id="bt" style="float: right;">>进入</button></a>
+                            </div>
+                        </div>   
+                        <p>&nbsp;</p>
+                        <a href="mails.html"><p align="center" style="width: 600px;">>查看更多</p></a>
+                    </div>
+                </div>
+                <div class="box1" width="250px" height="100px">
+                    <div class="box2">
+                        <p id="jg1">&nbsp;</p>
+                        <h3>&nbsp;购物</h3>
+                        <hr>
+                        <div class="box3">
+                            <div class="box4">
+                            <h3>&nbsp;淘宝网</h3>
+                            <p id="jg1">&nbsp;无介绍</p>
+                            <a href="https://www.taobao.com/"><button id="bt" style="float: right;">>进入</button></a>
+                            </div>
+                        </div>
+                        <div class="box5ce">
+                            <div class="box4">
+                            <h3>&nbsp;当当网</h3>
+                            <p id="jg1">&nbsp;无介绍</p>
+                            <a href="https://www.dangdang.com/"><button id="bt" style="float: right;">>进入</button></a>
+                            </div>
+                        </div>  
+                        <div class="box6rg">
+                            <div class="box4">
+                                <h3>&nbsp;天猫</h3>
+                                <p id="jg1">&nbsp;无介绍</p>
+                                <a href="https://www.tmail.com/"><button id="bt" style="float: right;">>进入</button></a>
+                            </div>
+                        </div>   
+                        <p>&nbsp;</p>
+                        <a href="shop.html"><p align="center" style="width: 600px;">>查看更多</p></a>
+                    </div>
+                </div>
+                <div class="box1" width="250px" height="100px">
+                    <div class="box2">
+                        <p id="jg1">&nbsp;</p>
+                        <h3>&nbsp;新闻</h3>
+                        <hr>
+                        <div class="box3">
+                            <div class="box4">
+                            <h3>&nbsp;观察者网</h3>
+                            <p id="jg1">&nbsp;无介绍</p>
+                            <a href="https://www.guancha.com/"><button id="bt" style="float: right;">>进入</button></a>
+                            </div>
+                        </div>
+                        <div class="box5ce">
+                            <div class="box4">
+                            <h3>&nbsp;环球网</h3>
+                            <p id="jg1">&nbsp;无介绍</p>
+                            <a href="https://www.huanqiu.com/"><button id="bt" style="float: right;">>进入</button></a>
+                            </div>
+                        </div>  
+                        <div class="box6rg">
+                            <div class="box4">
+                                <h3>&nbsp;参考消息</h3>
+                                <p id="jg1">&nbsp;无介绍</p>
+                                <a href="https://www.cankaoxiaoxi.com/"><button id="bt" style="float: right;">>进入</button></a>
+                            </div>
+                        </div>   
+                        <p>&nbsp;</p>
+                        <p align="center" style="width: 600px;">暂无更多内容...</p>
+                    </div>
+                </div>
+                <div class="box1" width="250px" height="100px">
+                    <div class="box2">
+                        <p id="jg1">&nbsp;</p>
+                        <h3>&nbsp;其他</h3>
+                        <hr>
+                        <div class="box3">
+                            <div class="box4">
+                            <h3>&nbsp;我的世界中国版</h3>
+                            <p id="jg1">&nbsp;网易(抑)版</p>
+                            <a href="https://mc.163.com/"><button id="bt" style="float: right;">>进入</button></a>
+                            </div>
+                        </div>
+                        <div class="box5ce">
+                            <div class="box4">
+                            <h3>&nbsp;国家中小学网络平台</h3>
+                            <p id="jg1">&nbsp;网课，大多为人教版</p>
+                            <a href="https://ykt.eduyun.cn/"><button id="bt" style="float: right;" onclick="funThree()">>进入</button></a>
+                            </div>
+                        </div>  
+                        </div>   
+                        <p align="center" style="width: 600px;">暂无更多内容...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

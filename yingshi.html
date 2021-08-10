@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Twelve网页导航 -影视导航</title>
+        <style>
+            body{
+                background-image: url(bg.jpg);
+                background-repeat:no repeat;
+                background-size:100%;
+                width: 1000px;
+                height: 600px;
+                align:center;
+                margin: 0 auto;
+            }
+            .lf{
+                width:270px;
+                height:600px;/*和bd重合*/
+                background-color: rgba(255, 255, 255, 0.767);
+                float:left;
+                display:inline;
+                border-radius: 10px;
+                border-style: 1px;
+                overflow-y:auto;
+            }
+            .rg{
+                width:710px;
+                height:600px;
+                background-color: rgba(255, 255, 255, 0.767);
+                float:right;
+                display:inline;
+                border-radius: 10px;
+                border-style: 1px;
+                overflow-y:auto;/*可滑动*/
+            }
+            .hd{
+                width:1000px;
+                height: 100px;
+                background-color: rgba(255, 255, 255, 0.767);
+                margin: 0 auto;
+                align:center;
+                border-radius: 10px;
+            }
+            #sr{
+                width:500px;
+                height:30px;
+                border-radius: 5px;
+                float:left;
+                line-height: 50%;
+            }
+            #bt{
+                width:60px;
+                height:35px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 5px;
+                line-height: 50%;
+            }
+            .search{
+                width:600px;
+                height:40px;
+                margin: 0 auto;
+                align:center;
+                line-height: 50%;
+            }
+            p,h1,h2,h3,h4,h5,h6,a,hr{
+                color: rgb(165, 162, 162);
+            }
+            #jg{
+                height: 1px;
+            }
+            li{
+                color:rgb(165, 162, 162);
+                align:center;
+            }
+            a{
+                text-decoration:none;
+                color:cornflowerblue;
+            }
+            a:hover{
+                color: cornflowerblue;
+            }
+            a:visited{
+                color:rgb(165, 162, 162);
+            }
+            #input{
+                width:100px;
+                height:30px;
+                border-radius: 5px;
+                ailgn:center;
+                border: rgba(255, 255, 255, 0.767) 1px;
+                margin:0 auto;
+            }
+            .box1{
+                width:660px;
+                height: 600px;
+                background-color:#fff;
+                border-radius: 5px;
+                margin: 0 auto;
+            }
+            .box2{
+                width:640px;
+                height:210px;
+                margin:0 auto;
+            }
+            .box3{
+                width:200px;
+                height:110px;
+                border-radius: 2px;
+                float: left;
+                display: inline;
+            }
+            #jg1{
+                height:1px;
+            }
+            #image{
+                width:32px;
+                height:32px;
+                vertical-align:middle;
+            }
+            #pag{
+                color: rgb(165,162,162);
+            }
+            .box4{
+                width:180px;
+                height:110px;
+                margin: 0 auto;
+            }
+            .lf1{
+                width:230px;
+                height:80px;
+                margin:0 auto;
+                border-radius: 3px;
+                background-color: #fff;
+            }
+            .box5ce{
+                width:200px;
+                height:110px;
+                border-radius: 2px;
+                display: inline;
+                float: left;
+            }
+            .box6rg{
+                width:200px;
+                height:110px;
+                border-radius: 2px;
+                display: inline;
+                float: left;
+            }
+            audio{
+                width:210px;
+                margin: 0 auto;
+                height:35px;
+                border-radius: 3px;
+            }
+            .rg::-webkit-scrollbar{ 
+            border-radius: 5px;
+            }
+        </style>
+         <script>
+            function sbsb() {
+                var a = document.getElementById("sr");
+                var loc = a.value;
+                window.open("https://quark.sm.cn/s?q="+loc);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="hd">
+            <p>&nbsp;</p>
+            <div class="search">
+                <from name="search" id="search">
+                    <input type="text" id="sr" name="sea" placeholder="使用 夸克 搜索" value=""/>
+                    <button id="bt" onclick="sbsb()">搜索</button>
+                </from>
+            </div>
+        </div>
+        <p id="jg">&nbsp;</p>
+        <div class="lf">
+            <p id="jg1">&nbsp;</p>
+            <p align="center">您当前的位置：影视的其他内容</p>
+            <a href="index.html"><p align="center">点击返回主页</p></a>
+        </div>
+        <div class="rg">
+            <p align="center">注：排序不分先后</p>
+                <p>
+                <div class="box1">
+                    <div class="box2">
+                        <p id="jg1">&nbsp;</p>
+                        <h3>&nbsp;影视</h3>
+                        <hr>
+                        <div class="box3">
+                            <div class="box4">
+                            <h3>&nbsp;优酷网</h3>
+                            <p id="jg1">&nbsp;无介绍</p>
+                            <a href="https://www.youku.com/"><button id="bt" style="float: right;">>进入</button></a>
+                            </div>
+                        </div>
+                        <div class="box5ce">
+                            <div class="box4">
+                            <h3>&nbsp;爱奇艺</h3>
+                            <p id="jg1">&nbsp;无介绍</p>
+                            <a href="https://www.aiqiyi.com/"><button id="bt" style="float: right;">>进入</button></a>
+                            </div>
+                        </div>  
+                        <div class="box6rg">
+                            <div class="box4">
+                                <h3>&nbsp;哔哩哔哩</h3>
+                                <p id="jg1">&nbsp;无介绍</p>
+                                <a href="https://www.bilibili.com/"><button id="bt" style="float: right;">>进入</button></a>
+                            </div>
+                        </div>   
+                        <div class="box6rg">
+                            <div class="box4">
+                                <h3>&nbsp;好康♂视频</h3>
+                                <p id="jg1">&nbsp;好看视频</p>
+                                <a href="https://haokan.baidu.com/"><button id="bt" style="float: right;">>进入</button></a>
+                            </div>
+                        </div>   
+                        <div class="box6rg">
+                            <div class="box4">
+                                <h3>&nbsp;腾讯视频</h3>
+                                <p id="jg1">&nbsp;无介绍</p>
+                                <a href="https://v.qq.com/"><button id="bt" style="float: right;">>进入</button></a>
+                            </div>
+                        </div>   
+                        <div class="box6rg">
+                            <div class="box4">
+                                <h3>&nbsp;芒果TV</h3>
+                                <p id="jg1">&nbsp;无介绍</p>
+                                <a href="https://www.mgtv.com/"><button id="bt" style="float: right;">>进入</button></a>
+                            </div>
+                        </div>   
+                        <div class="box6rg">
+                            <div class="box4">
+                                <h3>&nbsp;搜狐视频</h3>
+                                <p id="jg1">&nbsp;无介绍</p>
+                                <a href="https://tv.souhu.com/"><button id="bt" style="float: right;">>进入</button></a>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                </p>
+        </div>
+    </body>
+</html>
